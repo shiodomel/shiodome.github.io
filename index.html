@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_io/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon_io/favicon-96x96.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_io/apple-touch-icon.png">
+
+    <link rel="manifest" href="img/favicon_io/manifest.json">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitoge's Web</title>
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        .bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            transition: opacity 3s ease-in-out;
+            animation: bgmove 100s linear infinite alternate;
+        }
+
+        #bg1 {
+            z-index: -2;
+        }
+
+        #bg2 {
+            z-index: -1;
+            opacity: 0;
+        }
+
+        .bio-breathing {
+            font-family: '楷体', 'KaiTi', serif;
+            font-size: 30px;
+            font-weight: bold;
+            color: #1F1F1F;
+            text-shadow: 0 0 3px rgba(31, 31, 31, 0.5);
+            animation: breathing 10s ease-in-out infinite;
+        }
+
+        .roman {
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .scroll1 {
+            position: relative;
+            white-space: nowrap;
+            animation: moverighttoleft 20s linear infinite;
+            animation-fill-mode: backwards;
+        }
+
+        .scroll2 {
+            position: relative;
+            white-space: nowrap;
+            animation: movelefttoright 25s linear infinite;
+            animation-fill-mode: backwards;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 4rem;
+            color: #1F1F1F;
+            font-weight: 700;
+            margin: 40px 0;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes moverighttoleft {
+            0% {
+                left: 100%;
+            }
+
+            100% {
+                left: -100%;
+            }
+        }
+
+        @keyframes movelefttoright {
+            0% {
+                right: 100%;
+            }
+
+            100% {
+                right: -100%;
+            }
+        }
+
+        @keyframes breathing {
+            0% {
+                color: #1F1F1F;
+                text-shadow: 0 0 3px rgba(31, 31, 31, 0.5);
+            }
+
+            25% {
+                color: #7D99B8;
+                text-shadow: 0 0 10px rgba(125, 153, 184, 0.7);
+            }
+
+            50% {
+                color: #8B7D99;
+                text-shadow: 0 0 12px rgba(139, 125, 153, 0.7);
+            }
+
+            75% {
+                color: #7D99B8;
+                text-shadow: 0 0 10px rgba(125, 153, 184, 0.7);
+            }
+
+            100% {
+                color: #1F1F1F;
+                text-shadow: 0 0 3px rgba(31, 31, 31, 0.5);
+            }
+        }
+
+        @keyframes bgmove {
+            0% {
+                background-position: center top;
+            }
+
+            100% {
+                background-position: center bottom;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg1" class="bg"></div>
+    <div id="bg2" class="bg"></div>
+
+    <h1 class="title">Chitoge's Web</h1>
+
+    <div style="text-align: center;">
+        <i style="margin-right: 30px; font-size: 20px; color: #4A90E2;">#潮留美海</i>
+        <i style="margin-right: 30px; font-size: 20px; color: #F7C8D2;">#西园寺舞</i>
+        <i style="margin-right: 30px; font-size: 20px; color: #F3A6C0;">#沈余音</i>
+        <i style="margin-right: 30px; font-size: 20px; color: #9B81B8;">#神崎葵</i>
+        <i style="margin-right: 30px; font-size: 20px; color: #FFF8E7">#小米粥</i>
+        <i style="margin-right: 30px; font-size: 20px; color: #E6BE8A">#格鱼</i>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <audio id="bg-music" controls autoplay loop style="width: 80%; max-width: 500px;"></audio>
+    </div>
+
+    <h1 class="roman scroll1">Shiodome Miuna</h1>
+
+    <h1 class="roman scroll2">Saionji Mai</h1>
+
+    <h1 class="roman scroll1">Kanzaki Kui</h1>
+
+    <p class="bio-breathing" style="font-size: 25px;">“缄默。”</p>
+    <p class="bio-breathing" style="font-size: 25px;">“安康。”</p>
+    <p class="bio-breathing" style="font-size: 30px;">“成为自己想成为的人。”</p>
+    <p class="bio-breathing" style="font-size: 30px;">“但是相思莫相负，牡丹亭上三生路。”</p>
+
+    <p>
+        <img src="img/柊筱娅.jpg" width="600" height="900" />
+        <img src="img/宫本琉璃.jpg" width="600" height="900" />
+        <img src="img/四宫辉夜.jpg" width="600" height="900" />
+    </p>
+
+    <p>
+        <a href="https://space.bilibili.com/2958241" style="font-size: 24px;">B站UP：札格纳特</a>
+    </p>
+    <script>
+        const scrollitems = document.querySelectorAll('.scroll1, .scroll2');
+        scrollitems.forEach(item => {
+            const delay = Math.random() * 3;
+            item.style.animationDelay = delay + 's';
+        });
+
+        const images = [
+            "img/0.jpg",
+            "img/1.jpg",
+            "img/2.jpg",
+            "img/3.jpg"
+        ];
+
+        let index = 0;
+
+        const bg1 = document.getElementById("bg1");
+        const bg2 = document.getElementById("bg2");
+
+        bg1.style.backgroundImage = `url(${images[0]})`;
+
+        function nextBackground() {
+            index = (index + 1) % images.length;
+            bg2.style.backgroundImage = `url(${images[index]})`;
+            bg2.style.opacity = 1;
+            setTimeout(() => {
+                bg1.style.backgroundImage = bg2.style.backgroundImage;
+                bg2.style.opacity = 0;
+            }, 3000);
+        }
+
+        setInterval(nextBackground, 8000);
+
+        const musicFiles = [
+            "music/拜德钟楼广场.mp3",
+            "music/表裏な想い.mp3"
+        ];
+
+        let currentIndex = 0;
+        const audio = document.getElementById("bg-music");
+
+        function playNext() {
+            currentIndex = (currentIndex + 1) % musicFiles.length;
+            audio.src = musicFiles[currentIndex];
+            audio.play();
+        }
+
+        audio.src = musicFiles[currentIndex];
+        audio.play();
+
+        audio.addEventListener("ended", playNext);
+
+
+    </script>
+</body>
+
+</html>
